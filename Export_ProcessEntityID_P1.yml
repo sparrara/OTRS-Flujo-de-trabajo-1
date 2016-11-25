@@ -1,0 +1,495 @@
+--- 
+Activities: 
+  A1: 
+    ActivityDialogs: 
+      - AD11
+    ChangeTime: 2014-09-24 13:31:27
+    Config: 
+      ActivityDialog: 
+        1: AD11
+    CreateTime: 2014-09-19 13:37:59
+    EntityID: A1
+    ID: 1
+    Name: Aceptando la necesidad
+  A2: 
+    ActivityDialogs: 
+      - AD9
+      - AD10
+    ChangeTime: 2014-09-23 08:16:35
+    Config: 
+      ActivityDialog: 
+        1: AD9
+        2: AD10
+    CreateTime: 2014-09-19 14:12:44
+    EntityID: A2
+    ID: 2
+    Name: Construyendo AF
+  A4: 
+    ActivityDialogs: []
+
+    ChangeTime: 2014-09-25 11:08:04
+    Config: {}
+
+    CreateTime: 2014-09-22 14:42:08
+    EntityID: A4
+    ID: 4
+    Name: Completando SPL
+  A5: 
+    ActivityDialogs: 
+      - AD6
+      - AD7
+    ChangeTime: 2014-09-24 11:39:40
+    Config: 
+      ActivityDialog: 
+        1: AD6
+        2: AD7
+    CreateTime: 2014-09-24 11:39:40
+    EntityID: A5
+    ID: 5
+    Name: Calificando la necesidad
+ActivityDialogs: 
+  AD10: 
+    ChangeTime: 2014-09-25 10:34:43
+    Config: 
+      DescriptionLong: ''
+      DescriptionShort: Analisis Funcional No Aprobado
+      FieldOrder: 
+        - Article
+        - DynamicField_EstadoInterno
+        - Queue
+        - State
+      Fields: 
+        Article: 
+          Config: 
+            ArticleType: note-internal
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 1
+        DynamicField_EstadoInterno: 
+          DefaultValue: Aprobacion AF No exitoso
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+        Queue: 
+          DefaultValue: Junk
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+        State: 
+          DefaultValue: closed unsuccessful
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+      Interface: 
+        - AgentInterface
+      Permission: ''
+      RequiredLock: 0
+      SubmitAdviceText: ''
+      SubmitButtonText: ''
+    CreateTime: 2014-09-22 11:37:10
+    EntityID: AD10
+    ID: 10
+    Name: Analisis Funcional No Aprobado
+  AD11: 
+    ChangeTime: 2014-09-24 15:46:09
+    Config: 
+      DescriptionLong: ''
+      DescriptionShort: Aceptando
+      FieldOrder: 
+        - Article
+        - DynamicField_EstadoInterno
+      Fields: 
+        Article: 
+          Config: 
+            ArticleType: note-internal
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 1
+        DynamicField_EstadoInterno: 
+          DefaultValue: Aceptando necesidad
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+      Interface: 
+        - AgentInterface
+      Permission: ''
+      RequiredLock: 0
+      SubmitAdviceText: ''
+      SubmitButtonText: Aceptar
+    CreateTime: 2014-09-24 10:10:11
+    EntityID: AD11
+    ID: 11
+    Name: Aceptando
+  AD6: 
+    ChangeTime: 2014-09-24 15:09:47
+    Config: 
+      DescriptionLong: ''
+      DescriptionShort: Necesidad Calificada Aprobada
+      FieldOrder: 
+        - Article
+        - DynamicField_EstadoInterno
+        - Queue
+      Fields: 
+        Article: 
+          Config: 
+            ArticleType: note-internal
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 1
+        DynamicField_EstadoInterno: 
+          DefaultValue: Necesidad Calificada Aprobada
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+        Queue: 
+          DefaultValue: Evaluando Necesidad Calificada
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+      Interface: 
+        - AgentInterface
+      Permission: ''
+      RequiredLock: 0
+      SubmitAdviceText: ''
+      SubmitButtonText: ''
+    CreateTime: 2014-09-22 11:34:19
+    EntityID: AD6
+    ID: 6
+    Name: Necesidad Calificada Aprobada
+  AD7: 
+    ChangeTime: 2014-09-25 12:15:17
+    Config: 
+      DescriptionLong: ''
+      DescriptionShort: Necesidad Calificada Desaprobada
+      FieldOrder: 
+        - Article
+        - DynamicField_EstadoInterno
+        - State
+        - Queue
+      Fields: 
+        Article: 
+          Config: 
+            ArticleType: note-internal
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 1
+        DynamicField_EstadoInterno: 
+          DefaultValue: Necesidad Calificada Desaprobada
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+        Queue: 
+          DefaultValue: Junk
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+        State: 
+          DefaultValue: closed unsuccessful
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+      Interface: 
+        - AgentInterface
+      Permission: ''
+      RequiredLock: 0
+      SubmitAdviceText: ''
+      SubmitButtonText: ''
+    CreateTime: 2014-09-22 11:35:29
+    EntityID: AD7
+    ID: 7
+    Name: Necesidad Calificada Desaprobada
+  AD9: 
+    ChangeTime: 2014-09-25 10:36:19
+    Config: 
+      DescriptionLong: ''
+      DescriptionShort: Analisis Funcional Aprobado
+      FieldOrder: 
+        - Article
+        - DynamicField_EstadoInterno
+        - State
+        - Queue
+      Fields: 
+        Article: 
+          Config: 
+            ArticleType: note-internal
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 1
+        DynamicField_EstadoInterno: 
+          DefaultValue: Aprobacion AF Exitoso
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+        Queue: 
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+        State: 
+          DefaultValue: SubCola AF Aprobados
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: 0
+      Interface: 
+        - AgentInterface
+      Permission: ''
+      RequiredLock: 0
+      SubmitAdviceText: ''
+      SubmitButtonText: ''
+    CreateTime: 2014-09-22 11:36:31
+    EntityID: AD9
+    ID: 9
+    Name: Analisis Funcional Aprobado
+Process: 
+  Activities: 
+    - A1
+    - A2
+    - A4
+    - A5
+  ChangeTime: 2014-09-25 14:35:24
+  Config: 
+    Description: Proceso SPL
+    Path: 
+      A1: 
+        T7: 
+          ActivityEntityID: A5
+          TransitionAction: 
+            - TA11
+      A2: 
+        T5: 
+          ActivityEntityID: A4
+          TransitionAction: 
+            - TA4
+            - TA8
+            - TA12
+        T6: 
+          ActivityEntityID: A4
+          TransitionAction: 
+            - TA3
+            - TA9
+      A4: {}
+
+      A5: 
+        T2: 
+          ActivityEntityID: A2
+          TransitionAction: 
+            - TA2
+            - TA6
+        T3: 
+          ActivityEntityID: A4
+          TransitionAction: 
+            - TA3
+            - TA5
+    StartActivity: A1
+    StartActivityDialog: AD11
+  CreateTime: 2014-09-19 13:29:08
+  EntityID: P1
+  ID: 1
+  Layout: 
+    A1: 
+      left: 128
+      top: 181
+    A2: 
+      left: 922
+      top: 0
+    A3: 
+      left: 707
+      top: '348.399993896484'
+    A4: 
+      left: 600
+      top: 413
+    A5: 
+      left: 428
+      top: 88
+  Name: Proceso SPL
+  State: Active
+  StateEntityID: S1
+  TransitionActions: 
+    - TA11
+    - TA12
+    - TA4
+    - TA8
+    - TA3
+    - TA9
+    - TA2
+    - TA6
+    - TA3
+    - TA5
+  Transitions: 
+    - T7
+    - T5
+    - T6
+    - T2
+    - T3
+TransitionActions: 
+  TA11: 
+    ChangeTime: 2014-09-25 13:35:07
+    Config: 
+      Config: 
+        Queue: SPL Analisis Funcional::SubCola Necesidad Calificada
+      Module: Kernel::System::ProcessManagement::TransitionAction::TicketQueueSet
+    CreateTime: 2014-09-24 15:01:45
+    EntityID: TA11
+    ID: 11
+    Name: Cambiar a SubCola Necesidad Calificada
+  TA12: 
+    ChangeTime: 2014-09-25 13:28:45
+    Config: 
+      Config: 
+        Queue: SPL Analisis Funcional::SubCola AF Aprobados
+      Module: Kernel::System::ProcessManagement::TransitionAction::TicketQueueSet
+    CreateTime: 2014-09-25 10:10:20
+    EntityID: TA12
+    ID: 12
+    Name: Mover a SubCola AF Aprobados
+  TA2: 
+    ChangeTime: 2014-09-25 13:35:50
+    Config: 
+      Config: 
+        Queue: SPL Analisis Funcional::SubCola Construccion AF
+      Module: Kernel::System::ProcessManagement::TransitionAction::TicketQueueSet
+    CreateTime: 2014-09-22 14:31:00
+    EntityID: TA2
+    ID: 2
+    Name: "Mover a la SubCola: Cola de Construcción AF"
+  TA3: 
+    ChangeTime: 2014-09-22 14:31:32
+    Config: 
+      Config: 
+        Queue: Junk
+      Module: Kernel::System::ProcessManagement::TransitionAction::TicketQueueSet
+    CreateTime: 2014-09-22 14:31:32
+    EntityID: TA3
+    ID: 3
+    Name: Mover a la Cola de Junk
+  TA4: 
+    ChangeTime: 2014-09-22 14:37:07
+    Config: 
+      Config: 
+        State: closed successful
+      Module: Kernel::System::ProcessManagement::TransitionAction::TicketStateSet
+    CreateTime: 2014-09-22 14:33:59
+    EntityID: TA4
+    ID: 4
+    Name: Cerrar ticket exitoso
+  TA5: 
+    ChangeTime: 2014-09-22 14:38:09
+    Config: 
+      Config: 
+        State: closed unsuccessful
+      Module: Kernel::System::ProcessManagement::TransitionAction::TicketStateSet
+    CreateTime: 2014-09-22 14:38:09
+    EntityID: TA5
+    ID: 5
+    Name: Cerrar ticket No exitoso
+  TA6: 
+    ChangeTime: 2014-09-24 11:18:39
+    Config: 
+      Config: 
+        EstadoInterno: Necesidad Calificada Aprobada
+      Module: Kernel::System::ProcessManagement::TransitionAction::DynamicFieldSet
+    CreateTime: 2014-09-24 11:18:39
+    EntityID: TA6
+    ID: 6
+    Name: Cambiar EstadoInterno a Necesidad Calificada Aprobada
+  TA8: 
+    ChangeTime: 2014-09-24 11:20:30
+    Config: 
+      Config: 
+        EstadoInterno: Aprobacion AF Exitoso
+      Module: Kernel::System::ProcessManagement::TransitionAction::DynamicFieldSet
+    CreateTime: 2014-09-24 11:20:30
+    EntityID: TA8
+    ID: 8
+    Name: Cambiar EstadoInterno a Aprobacion AF Exitoso
+  TA9: 
+    ChangeTime: 2014-09-24 11:21:21
+    Config: 
+      Config: 
+        EstadoInterno: Aprobacion AF No exitoso
+      Module: Kernel::System::ProcessManagement::TransitionAction::DynamicFieldSet
+    CreateTime: 2014-09-24 11:21:21
+    EntityID: TA9
+    ID: 9
+    Name: Cambiar EstadoInterno a Aprobacion AF No exitoso
+Transitions: 
+  T2: 
+    ChangeTime: 2014-09-22 11:38:45
+    Config: 
+      Condition: 
+        1: 
+          Fields: 
+            DynamicField_EstadoInterno: 
+              Match: Necesidad Calificada Aprobada
+              Type: String
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2014-09-19 15:06:41
+    EntityID: T2
+    ID: 2
+    Name: Necesidad Calificada Aprobada
+  T3: 
+    ChangeTime: 2014-09-22 11:40:02
+    Config: 
+      Condition: 
+        1: 
+          Fields: 
+            DynamicField_EstadoInterno: 
+              Match: Necesidad Calificada Desaprobada
+              Type: String
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2014-09-22 11:40:02
+    EntityID: T3
+    ID: 3
+    Name: Necesidad Calificada Desaprobada
+  T5: 
+    ChangeTime: 2014-09-22 14:02:00
+    Config: 
+      Condition: 
+        1: 
+          Fields: 
+            DynamicField_EstadoInterno: 
+              Match: Aprobacion AF Exitoso
+              Type: String
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2014-09-22 11:40:56
+    EntityID: T5
+    ID: 5
+    Name: Aprobacion AF Exitoso
+  T6: 
+    ChangeTime: 2014-09-22 14:01:50
+    Config: 
+      Condition: 
+        1: 
+          Fields: 
+            DynamicField_EstadoInterno: 
+              Match: Aprobacion AF No exitoso
+              Type: String
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2014-09-22 11:41:20
+    EntityID: T6
+    ID: 6
+    Name: Aprobacion AF No exitoso
+  T7: 
+    ChangeTime: 2014-09-24 13:05:51
+    Config: 
+      Condition: 
+        1: 
+          Fields: 
+            DynamicField_EstadoInterno: 
+              Match: Aceptando necesidad
+              Type: String
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2014-09-24 11:48:15
+    EntityID: T7
+    ID: 7
+    Name: Aceptando necesidad
